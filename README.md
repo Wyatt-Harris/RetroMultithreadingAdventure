@@ -1,0 +1,7 @@
+-Multithreading Adventure  
+-Features & Use Cases  
+-Technologies Used  
+-How to run the project  
+-Contributors & Responsibilities  
+-UML Diagram  
+-Classes, Interfaces, Superclasses
