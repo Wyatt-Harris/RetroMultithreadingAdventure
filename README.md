@@ -7,6 +7,8 @@ stashed away somewhere in Hogwarts.
 The main feature of this game is the use of multithreading to tell multiple action-packed stories at once. The use cases would be anytime a user wants to have some fun!    
 -Technologies Used    
 Java, weather meteo API, Multithreading, Lambda Expressions     
+-Weather API  
+A weather API is used in this game that enhances the experience by changing how powerful certain spells are in the context of the weather.
 -How to run the project    
 Make sure your machine can compile and run Java source code and download these files. After the download, run the file titled GameEngine   
 -Contributors & Responsibilities    
