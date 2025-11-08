@@ -1,5 +1,7 @@
 package main;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public abstract class Character implements Runnable {
 protected final String name;
 protected final Item[] inventory = new Item[10];
