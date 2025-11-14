@@ -23,23 +23,24 @@ public Room getRoom() { return room; }
 
 
 protected void pickUpItem(Item item) {
-synchronized (room) {
-if (room.removeItem(item)) {
-for (int i = 0; i < inventory.length; i++) {
-if (inventory[i] == null) { inventory[i] = item;
-System.out.println(name + " picked up " + item.getName());
-return; }
-}
-System.out.println(name + " inventory full, dropped " + item.getName());
-room.addItem(item);
-}
-}
+    synchronized (room) {
+        if (room.removeItem(item)) {
+            for (int i = 0; i < inventory.length; i++) {
+                if (inventory[i] == null) { 
+                    inventory[i] = item;
+                    System.out.println(name + " picked up " + item.getName());
+                    return; }
+                }       
+            System.out.println(name + " inventory full, dropped " + item.getName());
+            room.addItem(item);
+        }
+    }
 }
 
 
 protected void moveTo(Room r) {
-System.out.println(name + " moves from " + room.getName() + " to " + r.getName());
-this.room = r;
+    System.out.println(name + " moves from " + room.getName() + " to " + r.getName());
+    this.room = r;
 }
 
 

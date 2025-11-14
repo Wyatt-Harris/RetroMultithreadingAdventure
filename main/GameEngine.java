@@ -21,9 +21,9 @@ public static void main(String[] args) throws InterruptedException {
 
 
 // Optional systems (API integrators)
-//Thread weatherThread = new Thread(new systems.WeatherSystem(world), "WeatherSystem");
-//weatherThread.setDaemon(true);
-//weatherThread.start();
+Thread weatherThread = new Thread(new WeatherSystem(world), "WeatherSystem");
+weatherThread.setDaemon(true);
+weatherThread.start();
 
 
 // Create characters
@@ -44,6 +44,6 @@ public static void main(String[] args) throws InterruptedException {
     characters.shutdownNow();
     dispatcher.stop();
     dispatcherThread.interrupt();
-    //weatherThread.interrupt();
+    weatherThread.interrupt();
     }
 }
